@@ -51,5 +51,7 @@ public class Product {
         Product p1 = new Product("SP01", "Tai nghe Bluetooth", 100000, 300000 );
         p1.printProduct();
 
+        Product p2 = new Product("SP01", "Apple Watch", 100000, 300000 );
+        p2.printProduct();
     }
 }

@@ -27,16 +27,19 @@ public class Product {
     }
 
     public String evaluateMargin() {
+        String message = "";
         double profit = this.calculateProfit();
         if (profit >= 500000) {
-            return "Siêu lợi nhuận";
+            message =  "Siêu lợi nhuận";
         } else if (profit >= 100000 && profit < 500000) {
-            return "Lợi nhuận tốt";
+            message = "Lợi nhuận tốt";
         } else if (profit >= 0 && profit < 100000) {
-            return "Lợi nhuận thấp";
+            message = "Lợi nhuận thấp";
         } else {
-            return "Hoà vốn hoặc lỗ";
+            message = "Hoà vốn hoặc lỗ";
         }
+
+        return message;
     }
 
     public void printProduct() {

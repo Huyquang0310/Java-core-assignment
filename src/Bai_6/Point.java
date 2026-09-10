@@ -9,8 +9,9 @@ public class Point {
         this.y = y;
     }
 
-    // Pass by value: truyền theo giá trị, đổi địa chỉ
-    // Pass by reference: Đổi giá trị
+    // Pass by value: truyền bản sao của giá trị
+    // Với object: giá trị được truyền là reference (tham chiếu) đến object
+
     public static void swap(Point p1, Point p2) { // p1 và p2 là địa chỉ
         Point temp = p1; // p1 và temp đều trỏ tới đc1
         p1 = p2; // p1 nhận tham chiếu mà p2 đang giữ, lúc này p1 và p2 trỏ tới đc2

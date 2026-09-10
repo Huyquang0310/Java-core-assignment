@@ -9,10 +9,13 @@ public class Point {
         this.y = y;
     }
 
-    public static void swap(Point p1, Point p2) { // Pass by value: truyền theo giá trị
-        Point temp = p1;
-        p1 = p2;
-        p2 = temp;
+    // Pass by value: truyền theo giá trị, đổi địa chỉ
+    // Pass by reference: Đổi giá trị
+    public static void swap(Point p1, Point p2) { // p1 và p2 là địa chỉ
+        Point temp = p1; // p1 và temp đều trỏ tới đc1
+        p1 = p2; // p1 nhận tham chiếu mà p2 đang giữ, lúc này p1 và p2 trỏ tới đc2
+        p2 = temp; // p2 nhận tham chiếu mà temp đang giữ (đc1), lúc này p2 và temp trỏ tới đc1
+
     }
 
     public static void reset(Point p) {

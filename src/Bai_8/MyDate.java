@@ -15,11 +15,8 @@ public class MyDate {
     public boolean isLeapYear(int year) {
 
         if (year % 400 == 0 || (year % 4 == 0 && year % 100 != 0)) {
-
             return true;
         } else {
-
-
             return false;
         }
     }
@@ -63,7 +60,7 @@ public class MyDate {
     }
     public static void main(String[] args) {
         MyDate d1 = new MyDate(28, 02, 2024);
-        MyDate d2 = new MyDate(31, 12, 2026);
+        MyDate d2 = new MyDate(31, 13, 2026);
 
         d1.display("Ngày");
         System.out.print(" (Năm nhuận) -> nextDay() -> ");

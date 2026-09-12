@@ -37,8 +37,5 @@ public class HotelRoom {
         this.isBooked = false;
         System.out.printf("- Khách ở %d đêm, check-out: Tổng tiền = %,.0f VND\n", nights, totalPrice);
         System.out.printf("- Phòng trả về trạng thái TRỐNG.\n");
-
     }
-
-
 }

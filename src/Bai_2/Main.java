@@ -8,6 +8,9 @@ public class Main {
         nhanvien[1] = new NhanVienPartTime("Khoi Nguyen", 5000000.0, 8);
 
         for (NhanVien nv : nhanvien) {
+            if (nhanvien == null) {
+                continue;
+            }
             nv.hienThiThongTin();
             System.out.println();
         }

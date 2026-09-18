@@ -8,6 +8,14 @@ public class NhanVienFullTime extends NhanVien {
         this.thuong = thuong;
     }
 
+    public double getThuong() {
+        return thuong;
+    }
+
+    public void setThuong(double thuong) {
+        this.thuong = thuong;
+    }
+
     @Override
     public double tinhLuong() {
         return luongCoBan + thuong;

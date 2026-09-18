@@ -9,6 +9,14 @@ public class NhanVienPartTime extends NhanVien{
         this.soGioLam = soGioLam;
     }
 
+    public int getSoGioLam() {
+        return soGioLam;
+    }
+
+    public void setSoGioLam(int soGioLam) {
+        this.soGioLam = soGioLam;
+    }
+
     @Override
     public double tinhLuong() {
         return luongCoBan + (soGioLam * 100000);

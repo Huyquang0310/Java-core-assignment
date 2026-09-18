@@ -9,10 +9,10 @@ public class TaiLieu {
 
     }
 
-    public TaiLieu(String maTaiLieu, String tenNhaXuatBan, int  soBanPhatHanh) {
+    public TaiLieu(String maTaiLieu, String tenNhaXuatBan, int soBanPhatHanh) {
         this.maTaiLieu = maTaiLieu;
-        this.soBanPhatHanh = soBanPhatHanh;
         this.tenNhaXuatBan = tenNhaXuatBan;
+        this.soBanPhatHanh = soBanPhatHanh;
     }
 
     public String getMaTaiLieu() {
@@ -40,9 +40,8 @@ public class TaiLieu {
     }
 
     public void hienThiThongTin() {
-        System.out.println("Mã Tài Liệu: 001");
-        System.out.println("Tên Nhà Xuất Bản: Nguyen Khoi");
-        System.out.println("Số Bản Phát Hành: 10");
+        System.out.printf("Mã Tài Liệu: %s, Tên Nhà Xuất Bản: %s, Số Bản Phát Hành: %d\n"
+                , maTaiLieu, tenNhaXuatBan, soBanPhatHanh);
 
     }
 }
